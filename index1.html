@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Chaitali Mhatre — Teacher & Assistant Professor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#5b4de0;
+      --muted:#6b7280;
+      --bg:#0f1724;
+      --card:#0b1220;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;margin:0;background:linear-gradient(180deg,#071029 0%, #0f1724 100%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:1100px;margin:30px auto;padding:24px}
+
+    header{display:flex;align-items:center;gap:18px}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{margin:0;font-size:22px;color:var(--primary)}
+    .brand p{margin:0;color:var(--muted);font-size:14px}
+
+    .hero{display:flex;gap:30px;align-items:center;margin-top:26px}
+    .hero .left{flex:1}
+    .hero h2{font-size:34px;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin-bottom:14px}
+
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{padding:10px 16px;border-radius:10px;border:none;cursor:pointer;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--primary),#7b69ff);color:#071029}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e6eef8}
+
+    .photo{width:220px;flex-shrink:0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+    .photo img{display:block;width:100%;height:100%;object-fit:cover}
+
+    /* cards */
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:600}
+
+    h3{color:#cfe0ff}
+    ul{padding-left:18px}
+
+    /* certificates gallery */
+    .certs{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .cert{background:#071427;padding:10px;border-radius:10px;min-width:180px}
+    .cert small{display:block;color:var(--muted);margin-top:6px}
+
+    /* timetable */
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px;border:1px solid rgba(255,255,255,0.03);text-align:left}
+
+    /* gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+
+    /* footer */
+    footer{text-align:center;padding:20px;margin-top:24px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .photo{width:160px}}
+
+    /* subtle float animation */
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .photo{animation:floaty 6s ease-in-out infinite}
+
+    /* typing effect small */
+    .typing{display:inline-block;color:var(--primary);font-weight:700}
+
+    /* contact form */
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    button.send{background:var(--primary);border:none;padding:10px 14px;border-radius:8px;color:#071029;font-weight:700;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Chaitali Mhatre</h1>
+        <p>Assistant Professor — Computer Engineering | Machine Learning & Data Science</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="left">
+        <h2>Hello — I'm <span class="typing">Chaitali</span></h2>
+        <p class="subtitle">Assistant Professor with 7+ years of teaching experience, focused on Machine Learning, Data Warehousing, Blockchain and practical student mentoring.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#certificates">Certificates</a>
+          <a class="btn btn-outline" href="#projects">Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <h3>Quick Info</h3>
+          <ul>
+            <li>Role: Assistant Professor, Universal College of Engineering (since Jan 3, 2025)</li>
+            <li>Teaching: Machine Learning, Data Warehousing & Data Mining, Blockchain</li>
+            <li>Location: Mumbai (Kaman, Vasai)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="photo">
+        <!-- replace images/profile.jpg with your real photo -->
+        <img src="images/chaitali.jpg" alt="Chaitali Mhatre" />
+      </div>
+    </section>
+
+    <div class="grid">
+      <div>
+        <section class="card" id="about">
+          <h3>About Me</h3>
+          <p>To establish myself as a dynamic and competent educator, equipped with latest tools, techniques and knowledge to deliver quality education and mentorship. I focus on activity-based learning, real-world projects, and continuous upskilling of students.</p>
+
+          <h3 style="margin-top:16px">Teaching Philosophy</h3>
+          <p class="subtitle">I believe every student can learn deeply when lessons connect to real problems. I emphasise critical thinking, hands-on labs, and constructive feedback.</p>
+
+          <h3 style="margin-top:16px">Subjects Taught</h3>
+          <div class="skills">
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Data Warehousing & Data Mining</span>
+            <span class="pill">Blockchain Technologies</span>
+            <span class="pill">Data Structures & Algorithms</span>
+            <span class="pill">Python Programming</span>
+          </div>
+        </section>
+
+        <section class="card" id="certificates">
+          <h3>Certificates & Courses</h3>
+          <div class="certs">
+            <div class="cert">
+              <strong>NPTEL — Introduction to Machine Learning</strong>
+              <small>Completed: 2024</small>
+            </div>
+            <div class="cert">
+              <strong>Coursera — Data Science Specialization</strong>
+              <small>Completed: 2023</small>
+            </div>
+            <div class="cert">
+              <div style="font-weight:700">Udemy — Python for Data Science</div>
+              <small>Completed: 2022</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="projects">
+          <h3>Selected Projects & Work</h3>
+          <ul>
+            <li><strong>Digital Music Store Analysis (SQL)</strong> — SQL-based analytics to improve sales & catalog strategy.</li>
+            <li><strong>Diwali Sales EDA (Python)</strong> — Exploratory Data Analysis with actionable insights.</li>
+            <li><strong>Power BI Sales Dashboard</strong> — Interactive dashboards for retail analytics.</li>
+            <li><strong>Sales Forecasting (Time Series)</strong> — Multiple ML models compared for forecasting accuracy.</li>
+          </ul>
+        </section>
+
+        <section class="card" id="gallery">
+          <h3>Classroom Gallery</h3>
+          <div class="gallery" style="margin-top:10px">
+            <img src="images/photo1.jpg" alt="class1" />
+            <img src="images/photo2.jpg" alt="class2" />
+            <img src="images/photo3.jpg" alt="class3" />
+          </div>
+        </section>
+
+        <section class="card" id="timetable">
+          <h3>Weekly Timetable</h3>
+          <table>
+            <tr><th>Day</th><th>Subject</th><th>Time</th></tr>
+            <tr><td>Monday</td><td>Machine Learning</td><td>10:00 — 11:30</td></tr>
+            <tr><td>Tuesday</td><td>Data Structures Lab</td><td>11:30 — 1:00</td></tr>
+            <tr><td>Wednesday</td><td>Data Mining</td><td>10:00 — 11:30</td></tr>
+            <tr><td>Thursday</td><td>Blockchain Technologies</td><td>1:00 — 2:30</td></tr>
+            <tr><td>Friday</td><td>Project Mentoring</td><td>12:00 — 2:00</td></tr>
+          </table>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:patilchaitali1333@gmail.com" style="color:#9fb4ff">patilchaitali1333@gmail.com</a></p>
+          <p>Phone: <a href="tel:+0101010101" style="color:#9fb4ff">+0 101 0101 101</a></p>
+          <p>Location: Kaman, Vasai, Mumbai</p>
+
+          <h3 style="margin-top:12px">Download CV</h3>
+          <a class="btn btn-primary" href="resume/resume_chaitali.pdf" download>Download CV</a>
+
+          <h3 style="margin-top:16px">Quick Links</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+            <a class="btn btn-outline" href="https://github.com/rishabhnmishra" target="_blank">GitHub</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/rishabhnmishra/" target="_blank">LinkedIn</a>
+            <a class="btn btn-outline" href="#certificates">Certificates</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Skills & Tools</h3>
+          <div class="skills" style="margin-top:8px">
+            <span class="pill">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">scikit-learn</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Power BI</span>
+          </div>
+
+          <h3 style="margin-top:14px">Achievements</h3>
+          <ul>
+            <li>Mentored 1000+ students</li>
+            <li>Organised industry visits & workshops</li>
+            <li>NAAC committee experience</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Contact Form</h3>
+          <form action="" onsubmit="event.preventDefault(); alert('Message sent (demo) — replace this handler with a real backend)'; this.reset();">
+            <label>Name</label><br>
+            <input type="text" name="name" required placeholder="Your name" /><br><br>
+            <label>Email</label><br>
+            <input type="email" name="email" required placeholder="you@example.com" /><br><br>
+            <label>Message</label><br>
+            <textarea name="message" rows="4" required placeholder="How can I help?"></textarea><br><br>
+            <button class="send" type="submit">Send Message</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <small>© <span id="yr"></span> Chaitali Mhatre — All rights reserved • Designed with ❤️</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // small typing loop for the heading
+    (function(){
+      const words=["Assistant Professor","Machine Learning Instructor","Mentor"];
+      const el=document.querySelector('.typing');
+      let i=0, j=0, forward=true;
+      function step(){
+        el.textContent = words[i].slice(0,j);
+        if(forward){ if(j<words[i].length) j++; else {forward=false; setTimeout(step,800); return}} else { if(j>0) j--; else {forward=true; i=(i+1)%words.length; setTimeout(step,200); return}}
+        setTimeout(step,90);
+      }
+      step();
+    })();
+  </script>
+</body>
+</html>
